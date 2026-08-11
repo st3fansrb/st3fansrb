@@ -24,9 +24,10 @@ governs and evaluates AI workflows.
 coding agent. Tech lead; 7th of 30 teams at iTEC 2026. PostgreSQL data model, real-time sync layer,
 Docker-isolated user code execution.
 
-Also, not public: quantitative trading research (paper-only, no real capital) — event-driven
-backtesting with no look-ahead, walk-forward and out-of-sample validation, and a bias toward
-reporting negative results as negative.
+**[forex-research](https://github.com/st3fansrb/forex-research)** — quantitative trading research
+(paper-only, no real capital): event-driven backtesting with no look-ahead, walk-forward and
+out-of-sample validation, and a bias toward reporting negative results as negative. The code is
+public; the trader's logs it was calibrated against, and the reports derived from them, are not.
 
 ### Working with
 
