@@ -12,24 +12,26 @@
 
 ---
 
-Computer Science student at **Politehnica University of Timișoara** (graduating 2028), currently
-**System Test Engineer Intern** at Aumovio Technologies Romania on an NFC digital car key platform.
+CS student at **Politehnica University of Timișoara** (2028). **System Test Engineer Intern**
+at Aumovio Technologies Romania, on an NFC digital car key platform.
 
-Most of my attention goes to agents built for the test-architecture team — and to the question of
-how you would ever *trust* one. My answer so far is to stop asking the model and start checking:
-the rules an agent must follow are hashed individually, the set it verified is hashed together,
-and **"did it skip a rule?" becomes a deterministic check** rather than a line in the model's own
-summary of its work.
+I build agents for the test architecture team, which leaves me with one question:
+**how would you ever trust one?**
 
-That bias keeps showing up on its own. A collaborative IDE I led got a static scanner grading
-submitted code before the sandbox ever started. A personal orchestrator got a fail-closed approval
-gate in front of every irreversible tool call. I designed neither as a security feature — I keep
-arriving at the same primitive, because **an agent that claims it followed the rules is not
-evidence.** A run ledger, a regression benchmark and a gate that fails closed are.
+My answer is to stop asking the model and start checking. Every rule an agent must follow is
+hashed, and the set it verified is hashed together, so *"did it skip a rule?"* becomes a
+**deterministic check** instead of a line in the model's own summary.
 
-I notice inefficiency compulsively and my first instinct is to remove it, which is how most of
-this got built. What I'm betting on is judgment: knowing which tools exist, what each one costs,
-and which one the problem in front of me actually needs.
+> **An agent that claims it followed the rules is not evidence.**
+> A run ledger, a regression benchmark and a gate that fails closed are.
+
+That bias shows up on its own. A collaborative IDE I led got a **static scanner** grading code
+before the sandbox started. A personal orchestrator got a **fail-closed gate** in front of every
+irreversible tool call. I designed neither as a security feature.
+
+I notice inefficiency compulsively and remove it, which is how most of this got built. What I'm
+betting on is **judgment**: which tools exist, what each costs, and which one the problem
+actually needs.
 
 ---
 
@@ -46,7 +48,7 @@ A self-hosted Python platform that orchestrates, governs and evaluates AI workfl
 - FastAPI over **PostgreSQL 16** for shared state and telemetry, migrated off lock files and SQLite
   with an idempotent cutover that verifies row counts in-transaction and rolls back on mismatch
 - **raw → staging → mart** ETL in SQL, with point-in-time lineage and a snapshot ID per run
-- **Airflow** DAGs for batch work — while fail-closed near-real-time jobs deliberately stay in-process
+- **Airflow** DAGs for batch work, while fail-closed near-real-time jobs deliberately stay in-process
 - **Risk gates**: policy-based approvals, workspace confinement, budget caps
 - **KageBench**: a fixed-task regression gate, so capability changes get measured rather than asserted
 
@@ -65,7 +67,7 @@ the sandbox.
 
 ### 📈 [forex-research](https://github.com/st3fansrb/forex-research)
 
-Quantitative trading research — paper-only, no real capital.
+Quantitative trading research. Paper-only, no real capital.
 
 Event-driven backtesting with no look-ahead, walk-forward and out-of-sample validation, and a
 bias toward reporting negative results as negative. The code is public; the trader's logs it was
@@ -73,7 +75,7 @@ calibrated against, and the reports derived from them, are not.
 
 ### 🧊 [Frigo](https://github.com/st3fansrb/HackTM)
 
-Flutter pantry-tracking app built for HackTM 2026 — barcode and OCR product resolution,
+Flutter pantry-tracking app built for HackTM 2026: barcode and OCR product resolution,
 locally computed Nutri-Score, LLM meal planning from what you already have.
 
 </td>
