@@ -13,11 +13,23 @@
 ---
 
 Computer Science student at **Politehnica University of Timișoara** (graduating 2028), currently
-**System Test Engineer Intern** at Aumovio Technologies Romania on an NFC digital car key platform —
-and building AI agents for the test-architecture team outside my assigned scope.
+**System Test Engineer Intern** at Aumovio Technologies Romania on an NFC digital car key platform.
 
-What I care about: making autonomous systems **inspectable**. An agent that claims it followed the
-rules is not evidence. A run ledger, a regression benchmark and a fail-closed approval gate are.
+Most of my attention goes to agents built for the test-architecture team — and to the question of
+how you would ever *trust* one. My answer so far is to stop asking the model and start checking:
+the rules an agent must follow are hashed individually, the set it verified is hashed together,
+and **"did it skip a rule?" becomes a deterministic check** rather than a line in the model's own
+summary of its work.
+
+That bias keeps showing up on its own. A collaborative IDE I led got a static scanner grading
+submitted code before the sandbox ever started. A personal orchestrator got a fail-closed approval
+gate in front of every irreversible tool call. I designed neither as a security feature — I keep
+arriving at the same primitive, because **an agent that claims it followed the rules is not
+evidence.** A run ledger, a regression benchmark and a gate that fails closed are.
+
+I notice inefficiency compulsively and my first instinct is to remove it, which is how most of
+this got built. What I'm betting on is judgment: knowing which tools exist, what each one costs,
+and which one the problem in front of me actually needs.
 
 ---
 
